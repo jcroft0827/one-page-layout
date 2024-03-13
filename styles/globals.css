@@ -1,0 +1,91 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body {
+  @apply scroll-smooth;
+}
+
+h2 {
+  @apply text-4xl text-black leading-10 font-bold tracking-wide mb-2;
+};
+
+h3 {
+  @apply text-2xl text-black leading-7 font-semibold tracking-wide mb-2;
+};
+
+h4 {
+  @apply text-xl text-black leading-7;
+};
+
+/* Hero */
+.heroH1 {
+  @apply text-xl font-semibold tracking-widest uppercase leading-3 text-orange-500;
+};
+
+h2.heroH2 {
+  @apply text-white lg:text-black;
+};
+
+.heroParagraph {
+  @apply text-base text-pretty text-white lg:text-black leading-5;
+};
+
+/* About Section */
+.aboutParagraph {
+  @apply text-base text-pretty text-black leading-5 tracking-wide max-w-[764px];
+};
+
+/* Swiper */
+.swiper {
+  @apply w-full h-full;
+};
+
+.swiper-slide {
+  @apply text-center text-lg bg-transparent;
+  /* Center slide text vertically */
+  @apply flex justify-center items-center;
+}
+
+.swiper-slide h4 {
+  @apply text-xl mb-2 text-orange-500;
+}
+
+.swiper-slide p {
+  @apply text-lg text-pretty;
+}
+
+.swiper-slide img {
+  @apply block w-full h-full object-cover;
+}
+
+/* Form */
+.basic {
+  @apply w-full flex flex-col gap-2;
+}
+
+.basic input, textarea {
+  @apply border rounded-md p-2 shadow-sm;
+}
+
+.basic button {
+  @apply border rounded-sm py-1 shadow-md bg-orange-500 text-white hover:bg-white hover:text-orange-500;
+}
+
+/* Table */
+table.base {
+  @apply w-full max-w-3xl mx-auto bg-[#383838] text-white shadow-md md:rounded-md;
+}
+
+table.base td {
+  @apply p-2 md:p-5;
+}
+
+table.base button {
+  @apply border border-white px-4 rounded-md hover:border-orange-500 hover:bg-orange-500;
+}
+
+/* Footer */
+.footer {
+  @apply bg-[#383838] w-full text-white pb-4;
+}
