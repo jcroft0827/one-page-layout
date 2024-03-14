@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import SwiperCom from "./SwiperCom";
+import SwiperCom from './SwiperCom';
 
 
 export default function About() {
